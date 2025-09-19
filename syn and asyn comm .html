@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image On/Off Switch</title>
+  <style>
+    #myImage {
+      width: 300px;
+      height: auto;
+      display: none; /* Start with the image hidden */
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Image On/Off Switch</h2>
+
+  <button onclick="switchOn()">Switch On</button>
+  <button onclick="switchOff()">Switch Off</button>
+
+  <br><br>
+
+  <img id="myImage" src="C:\Users\brain\Desktop\OIP.jpg">
+
+  <script>
+    function switchOn() {
+      document.getElementById("myImage").style.display = "block";
+    }
+
+    function switchOff() {
+      document.getElementById("myImage").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
